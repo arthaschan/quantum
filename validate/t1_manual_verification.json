@@ -1,0 +1,11 @@
+{
+  "p": 3,
+  "mub_verified": true,
+  "mub_inversion_error": 5.626129551953539e-16,
+  "cs_reconstruction_error": 0.024954746104202966,
+  "multi_state_mean_ratio": 1.010837988283206,
+  "multi_state_median_ratio": 0.8239235104700349,
+  "reported_ratio_d3": 0.846,
+  "ratio_difference": 0.16483798828320595,
+  "ratio_consistent": false
+}

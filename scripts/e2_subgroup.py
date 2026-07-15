@@ -1,8 +1,10 @@
 #!/usr/bin/env python3 -u
 """E2: Multiplicative subgroup analysis — standalone with flush"""
-import numpy as np, json, sys, math
+import numpy as np, json, sys, math, os
+from scipy.stats import spearmanr, pearsonr
 
-with open('primes_1000_results.json') as f:
+_data_dir = os.path.join(os.path.dirname(__file__), '..', 'data')
+with open(os.path.join(_data_dir, 'primes_1000_results.json')) as f:
     data = json.load(f)
 
 subgroup_data = []
@@ -55,15 +57,18 @@ for upf in sorted(by_uniq.keys()):
     rs = by_uniq[upf]
     print(f"  unique_pf={upf}: n={len(rs)} mean={np.mean(rs):.4f} median={np.median(rs):.4f}", flush=True)
 
-# Spearman
+# Spearman rank correlation with proper tie-handling
 x = [sd['n_unique_pf'] for sd in subgroup_data]
 y = [sd['ratio'] for sd in subgroup_data]
-n = len(x)
-rx = {v: i+1 for i, v in enumerate(sorted(set(x)))}
-ry = {v: i+1 for i, v in enumerate(sorted(set(y)))}
-d2 = sum((rx[xi]-ry[yi])**2 for xi,yi in zip(x,y))
-rho = 1 - 6*d2/(n*(n**2-1))
-print(f"\nSpearman ρ(unique_pf, ratio) = {rho:.4f}", flush=True)
+sp_rho, sp_p = spearmanr(x, y)
+pr, pr_p = pearsonr(x, y)
+print(f"\nSpearman rho(unique_pf, ratio) = {sp_rho:.4f}  (p = {sp_p:.4f})", flush=True)
+print(f"Pearson  r(unique_pf, ratio)   = {pr:.4f}   (p = {pr_p:.4f})", flush=True)
+if sp_p > 0.05:
+    print(f"→ p-1 smoothness does NOT significantly predict DPRT advantage", flush=True)
+else:
+    direction = "positive" if sp_rho > 0 else "negative"
+    print(f"→ Significant {direction} correlation (p = {sp_p:.4f})", flush=True)
 
 # Smoothness: ratio vs #small primes (≤11) in factorization
 by_smooth = {}

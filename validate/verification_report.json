@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-07-15T08:21:18.435835",
+  "e1": {
+    "n_primes": 167,
+    "median_ratio": 0.8637008231373484,
+    "mean_ratio": 0.8675058048440439,
+    "ratio_lt_090_pct": 64.07185628742515,
+    "ratio_lt_100_pct": 89.22155688622755
+  },
+  "spearman_correlation": {
+    "paper_claim": -0.8913,
+    "actual_168_primes": 0.04919547735848793,
+    "actual_p_value": 0.5278096897192839,
+    "actual_32_large_primes": 0.10077581249906999,
+    "large_primes_p_value": 0.5831471743400113,
+    "discrepancy": 0.9404954773584879,
+    "significant": true
+  },
+  "w1": {
+    "mub_construction_ok": true,
+    "mub_inversion_machine_zero": true,
+    "t2_variance_bound_ok": true,
+    "computation_speedup_ok": true
+  },
+  "e7": {
+    "noise_regularizer_confirmed": true,
+    "regularizer_cases_in_original": 75
+  },
+  "verdict": {
+    "confirmed": [
+      "E1 core stats",
+      "W1 MUB construction",
+      "W1 T2 bound",
+      "W1 speedup",
+      "E7 noise regularizer",
+      "E7 noise robustness",
+      "E1 top-10 dims"
+    ],
+    "significant_deviation": [
+      "Spearman rho correlation"
+    ],
+    "partially_confirmed": [
+      "T1 DFT(P)↔DPRT exact equivalence",
+      "d=2039 ratio"
+    ],
+    "not_verified": [
+      "G2 primitive root sensitivity",
+      "G3 optimal MUB subset",
+      "E5-new Local MUB",
+      "E4 2-local"
+    ]
+  }
+}

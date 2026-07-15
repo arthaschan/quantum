@@ -12,6 +12,7 @@ Output: all5_experiments_20260714.md + all5_results.json
 """
 import numpy as np, math, time, json, sys
 from collections import defaultdict
+from scipy.stats import spearmanr, pearsonr
 
 # ═══════════════════════════════════════
 # E1: PRIMITIVE ROOT ANALYSIS
@@ -168,21 +169,22 @@ def e2_subgroup_analysis(results_json_path):
         print(f"  {lpf:>5d} | {len(rs):>5d} | {np.mean(rs):>8.4f} | {np.median(rs):>8.4f} | {min(rs):>8.4f}")
     
     # Correlation: ratio vs #unique prime factors
-    # Manual Spearman rank correlation (no scipy dependency)
+    # Uses scipy.spearmanr with proper tie-handling (midrank method)
     unique_pfs = [sd['n_unique_pf'] for sd in subgroup_data]
     ratios = [sd['ratio'] for sd in subgroup_data]
     
-    def spearman_r(x, y):
-        n = len(x)
-        rx = {v: i+1 for i, v in enumerate(sorted(set(x)))}
-        ry = {v: i+1 for i, v in enumerate(sorted(set(y)))}
-        rx_arr = [rx[xi] for xi in x]
-        ry_arr = [ry[yi] for yi in y]
-        d2 = sum((a-b)**2 for a,b in zip(rx_arr, ry_arr))
-        return 1 - 6*d2/(n*(n**2-1))
+    sp_rho, sp_p = spearmanr(unique_pfs, ratios)
+    pr, pr_p = pearsonr(unique_pfs, ratios)
+    print(f"\n  Spearman rho(unique_pf, ratio) = {sp_rho:.4f}  (p = {sp_p:.4f})")
+    print(f"  Pearson  r(unique_pf, ratio)   = {pr:.4f}   (p = {pr_p:.4f})")
     
-    corr = spearman_r(unique_pfs, ratios)
-    print(f"\n  Spearman ρ(unique prime factors, ratio) = {corr:.4f}")
+    # Analysis: the correlation is near zero → no significant monotonic relationship
+    # between p-1 prime factor count and DPRT advantage
+    if sp_p > 0.05:
+        print(f"  → p-1 smoothness does NOT significantly predict DPRT advantage")
+    else:
+        direction = "positive" if sp_rho > 0 else "negative"
+        print(f"  → Significant {direction} correlation found")
     
     # Smooth vs wild: sqrt(unique PF count) 
     # Hypothesis: more unique prime factors → more subgroup structure → better deterministic advantage

@@ -1,0 +1,157 @@
+{
+  "mub_construction": {
+    "3": {
+      "n_bases": 4,
+      "expected_n_bases": 4,
+      "orthonormal_ok": true,
+      "mutually_unbiased_ok": true,
+      "max_inner_product_error": 3.3306690738754696e-16
+    },
+    "5": {
+      "n_bases": 6,
+      "expected_n_bases": 6,
+      "orthonormal_ok": true,
+      "mutually_unbiased_ok": true,
+      "max_inner_product_error": 4.996003610813204e-16
+    },
+    "7": {
+      "n_bases": 8,
+      "expected_n_bases": 8,
+      "orthonormal_ok": true,
+      "mutually_unbiased_ok": true,
+      "max_inner_product_error": 3.0531133177191805e-15
+    },
+    "11": {
+      "n_bases": 12,
+      "expected_n_bases": 12,
+      "orthonormal_ok": true,
+      "mutually_unbiased_ok": true,
+      "max_inner_product_error": 9.603429163007604e-15
+    },
+    "13": {
+      "n_bases": 14,
+      "expected_n_bases": 14,
+      "orthonormal_ok": true,
+      "mutually_unbiased_ok": true,
+      "max_inner_product_error": 1.3711254354120683e-14
+    }
+  },
+  "inversion_equivalence": {
+    "mub_frob_error": 5.626129551953539e-16,
+    "dprt_frob_error": 0.9488117482683116,
+    "mub_vs_dprt_frob": 0.9488117482683116,
+    "machine_precision_equivalent": false
+  },
+  "variance_bound": [
+    {
+      "d": 3,
+      "theoretical_bound": 48,
+      "actual_mse_x_N": 6.37384093851668,
+      "tightness_factor": 0.13278835288576415,
+      "bound_conservative_x": 7.530780962847586
+    },
+    {
+      "d": 5,
+      "theoretical_bound": 180,
+      "actual_mse_x_N": 23.631342919513447,
+      "tightness_factor": 0.13128523844174136,
+      "bound_conservative_x": 7.617002580558637
+    },
+    {
+      "d": 7,
+      "theoretical_bound": 448,
+      "actual_mse_x_N": 45.47859048143341,
+      "tightness_factor": 0.10151471089605671,
+      "bound_conservative_x": 9.850789025286428
+    },
+    {
+      "d": 11,
+      "theoretical_bound": 1584,
+      "actual_mse_x_N": 114.1176354269308,
+      "tightness_factor": 0.07204396175942601,
+      "bound_conservative_x": 13.880413785950118
+    },
+    {
+      "d": 13,
+      "theoretical_bound": 2548,
+      "actual_mse_x_N": 159.64149934908534,
+      "tightness_factor": 0.06265364966604604,
+      "bound_conservative_x": 15.960762147618848
+    }
+  ],
+  "complexity_bench": [
+    {
+      "d": 2,
+      "mub_time_ms": 0.030875002266839147,
+      "cs_time_ms": 15.62216599995736,
+      "time_ratio": 0.0019763586091021833,
+      "mub_mem_bytes": 48,
+      "cs_mem_bytes": 96000,
+      "mem_ratio": 0.0005
+    },
+    {
+      "d": 3,
+      "mub_time_ms": 0.050709000788629055,
+      "cs_time_ms": 23.399083002004772,
+      "time_ratio": 0.0021671362413768283,
+      "mub_mem_bytes": 96,
+      "cs_mem_bytes": 288000,
+      "mem_ratio": 0.0003333333333333333
+    },
+    {
+      "d": 5,
+      "mub_time_ms": 0.10579200170468539,
+      "cs_time_ms": 42.39620799489785,
+      "time_ratio": 0.002495317546263026,
+      "mub_mem_bytes": 240,
+      "cs_mem_bytes": 1200000,
+      "mem_ratio": 0.0002
+    },
+    {
+      "d": 7,
+      "mub_time_ms": 0.19500000053085387,
+      "cs_time_ms": 67.11233299574815,
+      "time_ratio": 0.002905576245475,
+      "mub_mem_bytes": 448,
+      "cs_mem_bytes": 3136000,
+      "mem_ratio": 0.00014285714285714287
+    },
+    {
+      "d": 11,
+      "mub_time_ms": 0.4325829941080883,
+      "cs_time_ms": 130.44320800690912,
+      "time_ratio": 0.0033162554089069623,
+      "mub_mem_bytes": 1056,
+      "cs_mem_bytes": 11616000,
+      "mem_ratio": 9.09090909090909e-05
+    },
+    {
+      "d": 13,
+      "mub_time_ms": 0.6038749997969717,
+      "cs_time_ms": 177.54725000122562,
+      "time_ratio": 0.003401207283091138,
+      "mub_mem_bytes": 1456,
+      "cs_mem_bytes": 18928000,
+      "mem_ratio": 7.692307692307693e-05
+    },
+    {
+      "d": 17,
+      "mub_time_ms": 1.0483329970156774,
+      "cs_time_ms": 272.9473329964094,
+      "time_ratio": 0.0038407885708466264,
+      "mub_mem_bytes": 2448,
+      "cs_mem_bytes": 41616000,
+      "mem_ratio": 5.882352941176471e-05
+    },
+    {
+      "d": 19,
+      "mub_time_ms": 1.370500001939945,
+      "cs_time_ms": 345.4129580059089,
+      "time_ratio": 0.0039677144999189645,
+      "mub_mem_bytes": 3040,
+      "cs_mem_bytes": 57760000,
+      "mem_ratio": 5.2631578947368424e-05
+    }
+  ],
+  "overall_pass": false
+}

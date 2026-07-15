@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-07-15T08:31:40.426861",
+  "bug_found": {
+    "location": [
+      "scripts/all5_experiments.py:175-182",
+      "scripts/e2_subgroup.py:58-66"
+    ],
+    "description": "Manual Spearman implementation does not handle ties, producing ρ=-0.8913 instead of correct ρ≈0.03",
+    "buggy_value": -0.8913247047747279,
+    "correct_value": 0.028584542530970983,
+    "correct_p_value": 0.7130171278933506,
+    "fix": "Replace with scipy.stats.spearmanr"
+  },
+  "e1_verified": true,
+  "e3_d2039": {
+    "reproduced_exact": true,
+    "single_state_ratio": 0.3267,
+    "multi_state_median": 0.797,
+    "conclusion": "Ratio is a single-state outlier; multi-state median is ~0.80"
+  },
+  "w1_verified": true,
+  "e7_verified": true,
+  "e5_code_correct": true,
+  "g2_g3_code_correct": true,
+  "all_scripts_reviewed": 7,
+  "scripts_with_bugs": 2,
+  "verdict": "Core numerical experiments are reproducible and correct. The Spearman correlation bug invalidates the p-1 smoothness → DPRT advantage causal chain."
+}
