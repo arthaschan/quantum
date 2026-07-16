@@ -1,0 +1,299 @@
+[
+  {
+    "d": 3,
+    "observable": 0,
+    "shadow_norm_sq": 6.0,
+    "direction_var": 0.5840916975978102,
+    "det_var": 3.207950000000002,
+    "random_total_var": 6.5840916975978105,
+    "dir_var_ratio": 0.0973486162663017
+  },
+  {
+    "d": 3,
+    "observable": 1,
+    "shadow_norm_sq": 6.0,
+    "direction_var": 0.5807902210791384,
+    "det_var": 3.1502000000000008,
+    "random_total_var": 6.5807902210791385,
+    "dir_var_ratio": 0.09679837017985639
+  },
+  {
+    "d": 3,
+    "observable": 2,
+    "shadow_norm_sq": 6.0,
+    "direction_var": 0.6141145394692148,
+    "det_var": 3.14755,
+    "random_total_var": 6.614114539469215,
+    "dir_var_ratio": 0.10235242324486914
+  },
+  {
+    "d": 5,
+    "observable": 0,
+    "shadow_norm_sq": 10.0,
+    "direction_var": 0.40542844993358024,
+    "det_var": 2.469254533922911,
+    "random_total_var": 10.40542844993358,
+    "dir_var_ratio": 0.04054284499335802
+  },
+  {
+    "d": 5,
+    "observable": 1,
+    "shadow_norm_sq": 10.0,
+    "direction_var": 0.4169793849305182,
+    "det_var": 2.599801375534882,
+    "random_total_var": 10.416979384930519,
+    "dir_var_ratio": 0.041697938493051825
+  },
+  {
+    "d": 5,
+    "observable": 2,
+    "shadow_norm_sq": 10.0,
+    "direction_var": 0.4198897638800745,
+    "det_var": 2.6610186089852386,
+    "random_total_var": 10.419889763880075,
+    "dir_var_ratio": 0.04198897638800745
+  },
+  {
+    "d": 5,
+    "observable": 3,
+    "shadow_norm_sq": 10.0,
+    "direction_var": 0.4042426372830966,
+    "det_var": 2.7042906055959004,
+    "random_total_var": 10.404242637283097,
+    "dir_var_ratio": 0.040424263728309665
+  },
+  {
+    "d": 5,
+    "observable": 4,
+    "shadow_norm_sq": 10.0,
+    "direction_var": 0.40435966127071266,
+    "det_var": 2.992001391014757,
+    "random_total_var": 10.404359661270712,
+    "dir_var_ratio": 0.04043596612707127
+  },
+  {
+    "d": 7,
+    "observable": 0,
+    "shadow_norm_sq": 14.0,
+    "direction_var": 0.3227736921637463,
+    "det_var": 2.194814234171499,
+    "random_total_var": 14.322773692163747,
+    "dir_var_ratio": 0.023055263725981878
+  },
+  {
+    "d": 7,
+    "observable": 1,
+    "shadow_norm_sq": 14.0,
+    "direction_var": 0.323204449202765,
+    "det_var": 2.7299851336661205,
+    "random_total_var": 14.323204449202764,
+    "dir_var_ratio": 0.023086032085911784
+  },
+  {
+    "d": 7,
+    "observable": 2,
+    "shadow_norm_sq": 14.0,
+    "direction_var": 0.3093245340764813,
+    "det_var": 2.596533134307001,
+    "random_total_var": 14.309324534076481,
+    "dir_var_ratio": 0.022094609576891522
+  },
+  {
+    "d": 7,
+    "observable": 3,
+    "shadow_norm_sq": 14.0,
+    "direction_var": 0.3221093695618571,
+    "det_var": 2.453825591895776,
+    "random_total_var": 14.322109369561858,
+    "dir_var_ratio": 0.02300781211156122
+  },
+  {
+    "d": 7,
+    "observable": 4,
+    "shadow_norm_sq": 14.0,
+    "direction_var": 0.32813991753156113,
+    "det_var": 2.7321227342306837,
+    "random_total_var": 14.328139917531562,
+    "dir_var_ratio": 0.023438565537968654
+  },
+  {
+    "d": 11,
+    "observable": 0,
+    "shadow_norm_sq": 22.0,
+    "direction_var": 0.1972518874200497,
+    "det_var": 2.7210786055791543,
+    "random_total_var": 22.197251887420048,
+    "dir_var_ratio": 0.008965994882729532
+  },
+  {
+    "d": 11,
+    "observable": 1,
+    "shadow_norm_sq": 22.0,
+    "direction_var": 0.19988716922641897,
+    "det_var": 2.0460620573928905,
+    "random_total_var": 22.199887169226418,
+    "dir_var_ratio": 0.009085780419382681
+  },
+  {
+    "d": 11,
+    "observable": 2,
+    "shadow_norm_sq": 22.0,
+    "direction_var": 0.2017165241857167,
+    "det_var": 2.6303360419484085,
+    "random_total_var": 22.201716524185716,
+    "dir_var_ratio": 0.009168932917532577
+  },
+  {
+    "d": 11,
+    "observable": 3,
+    "shadow_norm_sq": 22.0,
+    "direction_var": 0.19832433508606212,
+    "det_var": 2.199354662995844,
+    "random_total_var": 22.198324335086063,
+    "dir_var_ratio": 0.009014742503911915
+  },
+  {
+    "d": 11,
+    "observable": 4,
+    "shadow_norm_sq": 22.0,
+    "direction_var": 0.20254053179992962,
+    "det_var": 2.1734153844774067,
+    "random_total_var": 22.20254053179993,
+    "dir_var_ratio": 0.00920638780908771
+  },
+  {
+    "d": 13,
+    "observable": 0,
+    "shadow_norm_sq": 26.0,
+    "direction_var": 0.1411862715179107,
+    "det_var": 2.599269648710974,
+    "random_total_var": 26.14118627151791,
+    "dir_var_ratio": 0.005430241212227334
+  },
+  {
+    "d": 13,
+    "observable": 1,
+    "shadow_norm_sq": 26.0,
+    "direction_var": 0.141886175269963,
+    "det_var": 2.121656677075184,
+    "random_total_var": 26.141886175269963,
+    "dir_var_ratio": 0.0054571605873062696
+  },
+  {
+    "d": 13,
+    "observable": 2,
+    "shadow_norm_sq": 26.0,
+    "direction_var": 0.14106564892512952,
+    "det_var": 2.3822790795256132,
+    "random_total_var": 26.141065648925128,
+    "dir_var_ratio": 0.005425601881735751
+  },
+  {
+    "d": 13,
+    "observable": 3,
+    "shadow_norm_sq": 26.0,
+    "direction_var": 0.14559184111882906,
+    "det_var": 2.1514081265649865,
+    "random_total_var": 26.14559184111883,
+    "dir_var_ratio": 0.00559968619687804
+  },
+  {
+    "d": 13,
+    "observable": 4,
+    "shadow_norm_sq": 26.0,
+    "direction_var": 0.14349059694493957,
+    "det_var": 1.982879874400734,
+    "random_total_var": 26.14349059694494,
+    "dir_var_ratio": 0.005518869113266906
+  },
+  {
+    "d": 17,
+    "observable": 0,
+    "shadow_norm_sq": 34.0,
+    "direction_var": 0.10068089510877232,
+    "det_var": 1.9501230217374983,
+    "random_total_var": 34.10068089510877,
+    "dir_var_ratio": 0.002961202797316833
+  },
+  {
+    "d": 17,
+    "observable": 1,
+    "shadow_norm_sq": 34.0,
+    "direction_var": 0.10077974490137061,
+    "det_var": 2.4901547473154695,
+    "random_total_var": 34.100779744901374,
+    "dir_var_ratio": 0.002964110144157959
+  },
+  {
+    "d": 17,
+    "observable": 2,
+    "shadow_norm_sq": 34.0,
+    "direction_var": 0.10460543500447261,
+    "det_var": 1.9787478262191196,
+    "random_total_var": 34.10460543500447,
+    "dir_var_ratio": 0.0030766304413080182
+  },
+  {
+    "d": 17,
+    "observable": 3,
+    "shadow_norm_sq": 34.0,
+    "direction_var": 0.10400610332742252,
+    "det_var": 1.8516426910006192,
+    "random_total_var": 34.10400610332742,
+    "dir_var_ratio": 0.003059003039041839
+  },
+  {
+    "d": 17,
+    "observable": 4,
+    "shadow_norm_sq": 34.0,
+    "direction_var": 0.10152197029539772,
+    "det_var": 2.5276125089617683,
+    "random_total_var": 34.101521970295394,
+    "dir_var_ratio": 0.0029859403028058154
+  },
+  {
+    "d": 19,
+    "observable": 0,
+    "shadow_norm_sq": 38.0,
+    "direction_var": 0.11073221086045693,
+    "det_var": 2.1251419661423414,
+    "random_total_var": 38.110732210860455,
+    "dir_var_ratio": 0.0029140055489593926
+  },
+  {
+    "d": 19,
+    "observable": 1,
+    "shadow_norm_sq": 38.0,
+    "direction_var": 0.11249758788244654,
+    "det_var": 2.008786654498343,
+    "random_total_var": 38.112497587882444,
+    "dir_var_ratio": 0.002960462839011751
+  },
+  {
+    "d": 19,
+    "observable": 2,
+    "shadow_norm_sq": 38.0,
+    "direction_var": 0.1110299911701738,
+    "det_var": 1.9096382664466929,
+    "random_total_var": 38.11102999117018,
+    "dir_var_ratio": 0.0029218418728993107
+  },
+  {
+    "d": 19,
+    "observable": 3,
+    "shadow_norm_sq": 38.0,
+    "direction_var": 0.1106961346876884,
+    "det_var": 1.8732125295195001,
+    "random_total_var": 38.110696134687686,
+    "dir_var_ratio": 0.0029130561759918
+  },
+  {
+    "d": 19,
+    "observable": 4,
+    "shadow_norm_sq": 38.0,
+    "direction_var": 0.11381916602543726,
+    "det_var": 2.0710238099313614,
+    "random_total_var": 38.113819166025436,
+    "dir_var_ratio": 0.0029952412111957176
+  }
+]
